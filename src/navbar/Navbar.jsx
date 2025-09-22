@@ -45,13 +45,13 @@ export const Navbar = () => {
         <div ref={loadingElement} className="loadingIndicator"></div>
         <h1 className={styles.logo}>MRG</h1>
         <h1 className={styles.centerHeading}>MARANGI TOURS</h1>
-        <div className='flex w-max h-max gap-4 justify-center items-center'>
-          <Link to={"/login"}><span className='flex justify-center items-center'><FaUser className='hover:text-yellow-400' size={20}></FaUser></span></Link>
-          
-          <div className={styles.inputContainer}>
-          < FaSearch className={styles.searchIcon} />
-          <input type="search" className="input" placeholder='Search' />
-        </div>
+        <div className='hidden lg:flex w-[250px] h-max gap-4 justify-center items-center'>
+            <Link to={"/login"}><span className='flex justify-center items-center'><FaUser className='hover:text-yellow-400' size={20}></FaUser></span></Link>
+            
+            <div className={styles.inputContainer}>
+              < FaSearch className={styles.searchIcon} />
+              <input type="search" className="input" placeholder='Search' />
+            </div>
         </div>
         
         <button onClick={() => setIsMenu(!isMenu)} className={styles.hamburgerButton}>
@@ -84,6 +84,10 @@ export const Navbar = () => {
             <a onClick={() => handleClick('about')} className={`${styles.openMenuElement} ${ activeLink === 'about' ? styles.active : ''}`} href="#about">About</a>
             <a onClick={() => handleClick('contact')} className={`${styles.openMenuElement} ${ activeLink === 'contact' ? styles.active : ''}`} href="#contact">Contact</a>
           </ul>
+           <div className='w-full h-max flex gap-2'>
+              <button className='w-[120px] h-[40px] text-2xl text-white bg-yellow-400 rounded-md'>login</button>
+              <button className='w-[120px] h-[40px] text-2xl text-white bg-yellow-400 rounded-md'>signup</button>
+            </div>
           <div className={styles.openMenuSearchButton}>
             <div className={styles.searchContainer}>
               < FaSearch className={styles.openMenuSearchIcon} />

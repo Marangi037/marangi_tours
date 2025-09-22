@@ -22,6 +22,12 @@ export const images = { elephant, arrow }
 
 export const cards = [
     {
+        imgUrl: cape_town,
+        destination: "south africa",
+        title: "cape town",
+        desc: "Vibrant coastal city, framed by mountains, beaches, culture, and history."
+    },
+    {
         imgUrl: victoria,
         destination: "Zambia/Zimbambwe",
         title: "victoria falls",
@@ -33,12 +39,7 @@ export const cards = [
         title: "pyramids of giza",
         desc: "Ancient stone monuments rise majestically, preserving Egypt’s mysterious pharaoh legacy.",
     },
-    {
-        imgUrl: cape_town,
-        destination: "south africa",
-        title: "cape town",
-        desc: "Vibrant coastal city, framed by mountains, beaches, culture, and history."
-    },
+    
     {
         imgUrl: elephant,
         destination: "tsavo, Kenya",

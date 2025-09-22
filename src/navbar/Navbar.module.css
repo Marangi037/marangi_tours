@@ -3,7 +3,7 @@
 
 .navbar{
     font-family: 'Garamond';
-    @apply absolute top-0 left-0 right-0 flex flex-col justify-between items-center max-w-screen min-w-screen h-[100px] px-10 z-20 gap-1
+    @apply absolute top-0 left-0 right-0 flex flex-col justify-between items-center max-w-screen min-w-screen h-[100px] px-10 z-20 gap-1 backdrop-blur-2xl
 }
 .centerHeading{
     font-family: "Allura";
