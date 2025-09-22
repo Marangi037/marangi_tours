@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+.cardDiv{
+    @apply absolute bottom-1 left-2 text-white uppercase text-2xl
+}
+
+.cardDiv h2{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: 30px;
+    border-radius: 10px;
+}

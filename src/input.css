@@ -1,0 +1,293 @@
+@import "tailwindcss";
+
+.header{
+    font-family: 'Garamond' ;
+    @apply h-screen max-w-screen min-w-screen relative text-white overflow-hidden
+}
+
+
+
+
+
+.carousel{
+    @apply h-screen w-screen relative
+}
+
+.container .item{
+    @apply absolute top-0 bottom-0 right-0 left-0
+}
+
+.carousel .item:nth-child(1){
+    z-index: 3;
+}
+
+.itemImage{
+    @apply h-full w-full object-cover
+}
+
+/* next */
+
+.container.next .item:nth-child(1) img {
+   @apply w-[150px] h-[200px] md:w-[250px] md:h-[300px] absolute z-40 rounded-lg top-[60vh] md:top-[47vh] left-[55%] animate-[showItem_0.3s_linear_1_forwards] 
+
+}
+
+
+@keyframes showItem{
+    to{
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 15px;
+    }
+}
+
+
+/* prev */
+
+.container.prev .item:nth-child(2) img{
+    @apply w-screen h-screen z-[4] absolute top-0 right-0 left-0 bottom-0 animate-[shrinkItemSmall_0.3s_linear_1_forwards] md:animate-[shrinkItem_0.3s_linear_1_forwards] lg:animate-[shrinkItemLarge_0.3s_linear_1_forwards] rounded-[0]
+
+   
+}
+
+@keyframes shrinkItemSmall {
+    to{
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        top: 60vh;
+        left: 55%;
+        border-radius: 15px;
+    }
+} 
+@keyframes shrinkItem {
+    to{
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        top: 50vh;
+        left: 55%;
+        border-radius: 15px;
+    }
+} 
+
+@keyframes shrinkItemLarge {
+    to{
+        width: 250px;
+        height: 300px;
+        position: absolute;
+        top: 47vh;
+        left: 55%;
+        border-radius: 15px;
+    }
+}
+
+
+
+.content{
+    font-family: 'Garamond';
+    @apply absolute md:bottom-[20vh] bottom-[15vh] left-[5px] text-white w-[40vw] lg:w-[30vw] flex flex-col items-start gap-[10px]
+}
+
+.itemDestination{
+   
+    @apply text-[1em] md:text-[2.5em] font-medium before:content-[""] before:bg-white before:top-[-15px] before:md:top-0 before:h-[4px] before:w-[50px] before:rounded-lg before:absolute before:left-2 capitalize text-nowrap md:text-wrap
+}
+.itemTitle{
+    @apply text-[1.1em] md:text-[3em] font-bold uppercase lg:text-nowrap text-wrap
+}
+.itemDesc{
+    @apply text-[0.9em] md:text-[1.5em]
+}
+.container.next .item:nth-child(1) .content,
+.container.prev .item:nth-child(1) .content{
+    display: none;
+}
+.carousel .container .item:nth-child(1) .itemDestination,
+.carousel .container .item:nth-child(1) .itemTitle,
+.carousel .container .item:nth-child(1) .itemDesc{
+    transform: translateY(150px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.carousel .container .item:nth-child(1) .itemDestination{
+    animation-delay: 0.5s;
+}
+.carousel .container .item:nth-child(1) .itemTitle{
+    animation-delay: 0.7s;
+}
+.carousel .container .item:nth-child(1) .itemDesc{
+    animation-delay: 0.9s;
+}
+
+ /* prev card text */
+
+
+.container.prev .item:nth-child(2) .content{
+   z-index: 4;  
+}
+
+.container.prev .item:nth-child(2) .itemDestination,
+.container.prev .item:nth-child(2) .itemTitle,
+.container.prev .item:nth-child(2) .itemDesc{
+    animation: contentOut 0.5s linear 1 forwards;
+}
+@keyframes contentOut{
+    to{
+        transform: translateY(150px);
+        filter: blur(20px);
+        opacity: 0;
+
+    }
+}
+
+
+.thumbnail{
+    @apply w-max h-[200px] md:h-[300px] flex z-4 absolute bottom-[10vh] gap-[10px] left-[55%] 
+}
+.thumbnail.next{
+    @apply animate-[moveRight_0.3s_linear_1_forwards]
+}
+@keyframes moveRight{
+    from{
+        left: 60%;
+    }
+    to{
+        left: 55%;
+    }
+}
+
+.thumbnail.prev .thumbnailCard:first-child{
+    @apply w-0 md:animate-[prevThumbnail_0.5s_linear_1_forwards] animate-[prevThumbnailSmall_0.5s_linear_1_forwards]
+}
+@keyframes prevThumbnail{
+    to{
+        width: 250px;
+    }
+} 
+@keyframes prevThumbnailSmall{
+    to{
+        width: 150px;
+    }
+}
+.thumbnailCard{
+    @apply h-full w-[150px] md:w-[250px] relative rounded-xl
+}
+.thumbnailImage{
+    @apply h-full w-full rounded-xl
+}
+.thumbnailContent{
+    @apply bottom-[20px] left-1 flex flex-col absolute w-2/3 pl-2
+}
+
+
+.thumbnailDestination{
+    @apply md:text-[1.3em] text-[0.8em] capitalize text-nowrap
+}
+.thumbnailTitle{
+    @apply md:text-[1.5em] text-[1.2em] uppercase
+}
+.arrows{
+    @apply absolute bottom-[2vh] right-[20vw] flex gap-[20px] z-5
+}
+.leftArrow{
+    @apply border h-[40px] w-[40px] rounded-[50%] object-cover p-2
+}
+.rightArrow{
+    @apply border h-[40px] w-[40px] rounded-[50%] rotate-180 object-cover p-2
+}
+
+.list.next .arrows,
+.list.prev .arrows{
+    pointer-events: none;
+}
+
+.loadingIndicator{
+    @apply absolute top-0 left-0 z-10 h-[3px] rounded-lg bg-[#ead412]
+}
+
+.loadingIndicator.next {
+    @apply  animate-[loadingEffect_1.5s_linear_forwards]
+}
+@keyframes loadingEffect{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+
+/* DESTINATION */
+
+.destination{
+    @apply max-w-screen min-w-screen min-h-[80vh] lg:min-h-screen bg-white flex justify-around gap-10 items-center flex-col relative overflow-hidden bg-center bg-cover
+}
+
+.destinationHeader{
+    font-family: cursive;
+    @apply text-2xl text-start w-[95vw]
+}
+
+.destinationContainer{
+    @apply w-full h-max flex gap-2  px-3 transition-transform duration-500 ease-in-out text-nowrap
+}
+
+.destinationArrows{
+    @apply absolute top-45 right-[3vw] flex gap-[20px] z-5 flex-nowrap
+}
+
+.destinationLeftArrow{
+    @apply border h-[40px] w-[40px] rounded-[50%] object-cover p-2  bg-gray-400
+}
+.destinationRightArrow{
+    @apply border h-[40px] w-[40px] rounded-[50%] rotate-180 object-cover p-2  bg-gray-400
+}
+
+.accomodation-container:nth-child(1){
+    @apply rotate-45
+}
+.accomodation-container:nth-child(2){
+    @apply rotate-[-45deg]
+}
+.accomodation-container:nth-child(3){
+    @apply rotate-[-45deg]
+}
+.accomodation-container:nth-child(4){
+    @apply rotate-45
+}
+
+.accomodation-button:hover span{
+   @apply absolute right-1 transition-all duration-500
+}
+
+.forgot_password{
+    @apply text-2xl
+}
+
+.forgot_password:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.signup_link{
+    @apply text-2xl
+}
+.signup_link:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
