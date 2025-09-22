@@ -90,7 +90,7 @@
 
 .content{
     font-family: 'Garamond';
-    @apply absolute md:bottom-[20vh] bottom-[15vh] left-[5px] text-white w-[40vw] lg:w-[30vw] flex flex-col items-start gap-[10px]
+    @apply absolute md:bottom-[20vh] bottom-[12vh] left-[5px] text-white w-[40vw] lg:w-[30vw] flex flex-col items-start gap-[10px]
 }
 
 .itemDestination{
