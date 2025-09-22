@@ -1,7 +1,6 @@
-import { Destination } from "./Destination.jsx";
 import { Home } from "./Home.jsx";
 import { Signup } from "./Signup.jsx";
-import { Login } from "./login.jsx";
+import { Login } from "./Login.jsx";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
