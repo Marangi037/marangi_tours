@@ -38,9 +38,9 @@ export const Header = () => {
                       <div key={index} className="item">
                           <img className="itemImage" src={item.imgUrl} alt="image" />
                           <div  className={`content ${isClicked ? "next" : ''}`}>
-                              <h2 className="itemDestination backdrop-blur-lg">{item.destination}</h2>
-                              <h1 className="itemTitle backdrop-blur-lg">{item.title}</h1>
-                              <h2 className="itemDesc backdrop-blur-lg">{item.desc}</h2>
+                              <h2 className="itemDestination">{item.destination}</h2>
+                              <h1 className="itemTitle">{item.title}</h1>
+                              <h2 className="itemDesc">{item.desc}</h2>
                           </div>
                       </div>
                   )}
