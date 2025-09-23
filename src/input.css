@@ -2,7 +2,7 @@
 
 .header{
     font-family: 'Garamond' ;
-    @apply lg:h-screen h-[90vh] max-w-screen min-w-screen relative text-white overflow-hidden
+    @apply lg:h-screen h-[90vh] max-w-screen relative text-white overflow-hidden
 }
 
 
@@ -10,7 +10,7 @@
 
 
 .carousel{
-    @apply h-screen w-screen relative
+    @apply h-full w-screen relative
 }
 
 .container .item{
@@ -49,7 +49,7 @@
 /* prev */
 
 .container.prev .item:nth-child(2) img{
-    @apply w-screen h-screen z-[4] absolute top-0 right-0 left-0 bottom-0 animate-[shrinkItemSmall_0.3s_linear_1_forwards] md:animate-[shrinkItem_0.3s_linear_1_forwards] lg:animate-[shrinkItemLarge_0.3s_linear_1_forwards] rounded-[0]
+    @apply w-screen h-full z-[4] absolute top-0 right-0 left-0 bottom-0 animate-[shrinkItemSmall_0.3s_linear_1_forwards] md:animate-[shrinkItem_0.3s_linear_1_forwards] lg:animate-[shrinkItemLarge_0.3s_linear_1_forwards] rounded-[0]
 
    
 }
@@ -234,7 +234,7 @@
 /* DESTINATION */
 
 .destination{
-    @apply max-w-screen min-w-screen min-h-[80vh] lg:min-h-screen bg-white flex justify-around gap-10 items-center flex-col relative overflow-hidden bg-center bg-cover
+    @apply max-w-screen min-w-screen h-[70vh] lg:min-h-screen bg-white flex justify-around gap-10 items-center flex-col relative overflow-hidden bg-center bg-cover
 }
 
 .destinationHeader{

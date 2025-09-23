@@ -29,7 +29,7 @@ export const Testimonials = () => {
           setCurrentIndex((prevIndex) => prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1);
       }
   return (
-    <section id='testimonials' className='min-w-screen min-h-[80vh] flex justify-center items-center overflow-hidden relative py-[2rem] lg:py-0 bg-white'>
+    <section id='testimonials' className='max-w-screen lg:min-h-[80vh] h-[60vh] flex justify-center items-center overflow-hidden relative py-[2rem] lg:py-0 bg-white'>
         
 
             <div className='bg-gray-400 w-[70%] lg:w-[50vw] h-[45vh] lg:h-[60vh] border-2 border-transparent rounded-2xl pb-5 flex flex-col gap-6 overflow-hidden my-4'>
