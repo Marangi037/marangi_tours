@@ -2,7 +2,7 @@
 
 .header{
     font-family: 'Garamond' ;
-    @apply h-screen max-w-screen min-w-screen relative text-white overflow-hidden
+    @apply lg:h-screen h-[90vh] max-w-screen min-w-screen relative text-white overflow-hidden
 }
 
 

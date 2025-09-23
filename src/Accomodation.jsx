@@ -27,11 +27,11 @@ export const Accomodation = () => {
           </div>
           <div className='w-full h-max flex flex-col'>
             <label className='lg:text-[35px] text-xl' htmlFor="input">check in</label>
-            <input className='bg-white outline-0 h-[40px] text-black rounded-md pl-2'  type="date" />
+            <input className='bg-white outline-0 h-[40px] text-black rounded-md pl-2 w-full'  type="date" />
           </div>
           <div className='w-full h-max flex flex-col'>
             <label className='lg:text-[35px] text-xl' htmlFor="input">check out</label>
-            <input className='bg-white outline-0 h-[40px] text-black rounded-md pl-2'  type="date" />
+            <input className='bg-white outline-0 h-[40px] text-black rounded-md pl-2 w-full'  type="date" />
           </div>
           <button className='lg:w-[160px] w-[120px] h-[40px] bg-yellow-500 relative lg:text-[16px] text-[10px] flex justify-start items-center rounded-lg pl-3 uppercase accomodation-button'>search now <span className='absolute right-3 top-2.5'><FaArrowRight className='lg:text-2xl text-[16px]' color='black' /></span></button>
         </form>
