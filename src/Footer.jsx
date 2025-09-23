@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <section className='max-w-screen h-screen lg:h-[60vh] p-[3rem]  lg:flex lg:gap-6 gap-9 bg-black text-white grid grid-cols-2'>
+    <section className='max-w-screen h-screen lg:h-[60vh] p-[3rem]  lg:flex lg:gap-6 gap-9 bg-black text-white grid grid-cols-2 overflow-x-hidden'>
         <div className='flex flex-col w-1/2 lg:w-1/5 lg:gap-8 gap-2 lg:px-2 px-0 justify-start items-start'>
           <h1 className='lg:text-4xl text-[16px]'>we craft bold high-quality and unapologetic self-expression everywhere</h1>
           <div className='flex w-full h-max gap-2'>

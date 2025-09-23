@@ -85,8 +85,10 @@ export const Navbar = () => {
             <a onClick={() => handleClick('contact')} className={`${styles.openMenuElement} ${ activeLink === 'contact' ? styles.active : ''}`} href="#contact">Contact</a>
           </ul>
            <div className='w-full h-max flex gap-2'>
-              <button className='w-[120px] h-[40px] text-2xl text-white bg-yellow-400 rounded-md'>login</button>
-              <button className='w-[120px] h-[40px] text-2xl text-white bg-yellow-400 rounded-md'>signup</button>
+            <Link to={"/login"}><button className='w-[120px] h-[40px] text-2xl text-white bg-yellow-400 rounded-md'>login</button></Link>
+            <Link to={"/signup"}><button className='w-[120px] h-[40px] text-2xl text-white bg-yellow-400 rounded-md'>signup</button></Link>
+              
+              
             </div>
           <div className={styles.openMenuSearchButton}>
             <div className={styles.searchContainer}>

@@ -3,7 +3,7 @@ import { FaArrowLeft, FaArrowRight, FaLocationArrow, FaMap, FaMapMarked, FaUser 
 
 export const Accomodation = () => {
   return (
-    <section id='accommodation' className='min-h-screen max-w-screen min-w-screen lg:flex bg-[url("/hotel1.jpg")] bg-center bg-cover'>
+    <section id='accommodation' className='min-h-screen max-w-screen min-w-screen lg:flex bg-[url("/hotel1.jpg")] bg-center bg-cover overflow-x-hidden'>
       <div className='hidden lg:flex w-1/2 min-h-screens flex-col justify-center items-center gap-[5rem] pr-[11rem]'>
           <div className='flex w-full h-max justify-center items-center gap-[5rem]'>
             <img className='min-w-[200px] min-h-[200px] max-w-[200px] max-h-[200px]  accomodation-container shrink-0 grow-0' src="/hotel.jpg" alt="hotel picture" />

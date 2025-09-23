@@ -155,7 +155,7 @@
 
 
 .thumbnail{
-    @apply w-max h-[200px] md:h-[300px] flex z-4 absolute bottom-[14vh] lg:bottom-[10vh] gap-[10px] left-[55%] 
+    @apply w-max h-[200px] md:h-[300px] flex z-4 absolute bottom-[14vh] lg:bottom-[10vh] gap-[10px] left-[55%] overflow-hidden
 }
 .thumbnail.next{
     @apply animate-[moveRight_0.3s_linear_1_forwards]
