@@ -194,10 +194,10 @@
 
 
 .thumbnailDestination{
-    @apply md:text-[1.3em] text-[0.8em] capitalize text-nowrap
+    @apply md:text-[1.3em] lg:text-[0.8em] text-[12px] capitalize text-nowrap
 }
 .thumbnailTitle{
-    @apply md:text-[1.5em] text-[1.2em] uppercase
+    @apply md:text-[1.5em] text-[12px] uppercase
 }
 .arrows{
     @apply absolute bottom-[2vh] right-[20vw] flex gap-[20px] z-5
@@ -239,7 +239,7 @@
 
 .destinationHeader{
     font-family: cursive;
-    @apply text-2xl text-start w-[95vw]
+    @apply lg:text-2xl text-xl text-start w-[95vw]
 }
 
 .destinationContainer{
@@ -247,7 +247,7 @@
 }
 
 .destinationArrows{
-    @apply absolute top-45 right-[3vw] flex gap-[20px] z-5 flex-nowrap
+    @apply absolute top-45 right-[2rem]  flex gap-[20px] z-5 flex-nowrap
 }
 
 .destinationLeftArrow{
