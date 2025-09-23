@@ -21,7 +21,7 @@ export const Footer = () => {
           </ul>
         </div>
         <div className='flex flex-col w-1/2 lg:w-1/5 gap-4 justify-start items-center'>
-          <h1 className='lg:text-4xl text-xl text-nowrap'>popular destinations</h1>
+          <h1 className='lg:text-4xl text-xl text-nowrap'>popular</h1>
           <ul className='flex flex-col gap-2 lg:text-2xl text-[16px]'>
             <li>Bali</li>
             <li>Thailand</li>
@@ -29,7 +29,7 @@ export const Footer = () => {
             <li>Maasai Mara</li>
           </ul>
         </div>
-        <div className='flex flex-col w-1/2 lg:w-1/5 gap-4 justify-end items-start'>
+        <div className='flex flex-col w-1/2 lg:w-1/5 gap-4 justify-start items-start'>
           <h1 className='lg:text-4xl text-xl text-nowrap'>contact us</h1>
             <ul className='flex flex-col font-medium text-[16px] lg:text-2xl gap-3'>
               <a href="#">+254712345678</a>

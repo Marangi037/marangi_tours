@@ -247,7 +247,7 @@
 }
 
 .destinationArrows{
-    @apply absolute top-45 right-[2rem]  flex gap-[20px] z-5 flex-nowrap
+    @apply absolute top-40 lg:top-45 right-[2rem]  flex gap-[20px] z-5 flex-nowrap
 }
 
 .destinationLeftArrow{

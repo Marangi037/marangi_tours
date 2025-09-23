@@ -34,13 +34,13 @@ export const Testimonials = () => {
 
             <div className='bg-gray-400 w-[70%] lg:w-[50vw] h-[45vh] lg:h-[60vh] border-2 border-transparent rounded-2xl pb-5 flex flex-col gap-6 overflow-hidden my-4'>
               <div className='flex w-full justify-between items-center'>
-                <h1 className='underline underline-offset-1 text-1.5xl pl-10 uppercase'>mrg tours</h1>
+                <h1 className='underline underline-offset-1 text-xl lg:text-2xl pl-10 uppercase'>mrg tours</h1>
                 <img className='object-cover w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] rounded-b-4xl' src={testimonials[currentIndex].imageUrl} alt={testimonials[currentIndex].name} />         
               </div>
               <p className='text-start text-[10px] lg:text-3xl mx-[4rem] relative'><span className='absolute top-[-1.5rem] left-[-1.5rem] text-5xl text-yellow-300 font-bold'>“</span>{testimonials[currentIndex].desc} <span className='absolute top-[-1.5rem] lg:right-[2rem] right-[-1rem] text-5xl text-yellow-300 font-bold'>”</span></p>
               <div className='w-full h-max flex flex-col gap-2'>
-                <h1 className='lg:text-3xl text-xl pl-18'>{testimonials[currentIndex].name}</h1>
-                <div className='flex pl-18'>{Array.from({ length: testimonials[currentIndex].rating }).map((_, i) => <span key={i}>< FaStar className='lg:text-3xl text-xl' color='yellow'/></span>  )}</div>
+                <h1 className='lg:text-3xl text-[18px] pl-18'>{testimonials[currentIndex].name}</h1>
+                <div className='flex pl-18'>{Array.from({ length: testimonials[currentIndex].rating }).map((_, i) => <span key={i}>< FaStar className='lg:text-3xl text-[16px]' color='yellow'/></span>  )}</div>
               </div>
           </div>
           
