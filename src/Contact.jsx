@@ -6,7 +6,7 @@ export const Contact = () => {
         <div className='w-full h-full backdrop-blur-[5px] gap-[3rem] flex flex-col'>
             <h1 className='w-full text-center text-2xl lg:text-5xl text-black lg:text-white'>Contact us</h1>
             <div className='h-[90%] flex flex-col lg:flex-row w-[70%] justify-center items-center lg:w-full'>
-                <div className=' w-full lg:w-1/2 h-[80%] flex flex-col px-4 lg:px-[12rem] gap-5 pt-[6rem] text-black lg:text-white justify-start items-start'>
+                <div className=' w-full lg:w-1/2 h-[80%] flex flex-col px-4 lg:px-[12rem] gap-5 pt-[6rem] lg:pt-0 text-black lg:text-white justify-start items-start'>
                     <div className='w-full h-max flex justify-between items-center gap-4'>
                         <div className='w-1/2 h-max flex flex-col items-start justify-center'>
                             <label className='text-xl lg:text-2xl text-nowrap' htmlFor="input">First name</label>

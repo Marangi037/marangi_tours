@@ -10,7 +10,7 @@
 
 
 .carousel{
-    @apply h-full w-screen relative
+    @apply h-full w-screen relative  
 }
 
 .container .item{
@@ -90,7 +90,8 @@
 
 .content{
     font-family: 'Garamond';
-    @apply absolute md:bottom-[20vh] bottom-[12vh] left-[5px] text-white w-[40vw] lg:w-[30vw] flex flex-col items-start gap-[10px]
+    @apply absolute md:bottom-[20vh] bottom-[12vh] left-[5px] text-white w-[40vw] lg:w-[30vw] flex flex-col items-start gap-[10px] 
+
 }
 
 .itemDestination{
@@ -98,10 +99,10 @@
     @apply text-[1em] md:text-[2.5em] font-medium before:content-[""] before:bg-white before:top-[-15px] before:md:top-0 before:h-[4px] before:w-[50px] before:rounded-lg before:absolute before:left-2 capitalize text-nowrap md:text-wrap
 }
 .itemTitle{
-    @apply text-[1.1em] md:text-[3em] font-bold uppercase lg:text-nowrap text-wrap
+    @apply text-[1.1em] md:text-[3em] font-bold uppercase lg:text-nowrap text-wrap 
 }
 .itemDesc{
-    @apply text-[0.9em] md:text-[1.5em]
+    @apply text-[0.9em] md:text-[1.5em] 
 }
 .container.next .item:nth-child(1) .content,
 .container.prev .item:nth-child(1) .content{
@@ -123,13 +124,17 @@
     }
 }
 .carousel .container .item:nth-child(1) .itemDestination{
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     animation-delay: 0.5s;
 }
 .carousel .container .item:nth-child(1) .itemTitle{
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     animation-delay: 0.7s;
 }
 .carousel .container .item:nth-child(1) .itemDesc{
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     animation-delay: 0.9s;
+    
 }
 
  /* prev card text */

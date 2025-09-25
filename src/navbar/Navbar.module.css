@@ -3,10 +3,11 @@
 
 .navbar{
     font-family: 'Garamond';
-    @apply absolute top-0 left-0 right-0 flex flex-col justify-between items-center max-w-screen min-w-screen h-[100px] px-10 z-20 gap-1 backdrop-blur-[5px]
+    @apply absolute top-0 left-0 right-0 flex flex-col justify-between items-center max-w-screen min-w-screen h-[100px] px-10 z-20 gap-1
 }
 .centerHeading{
     font-family: "Allura";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     @apply text-3xl tracking-[10px] hidden md:block
 
 }
@@ -16,6 +17,7 @@
 }
 .navElements{
     font-family: "Allura";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     @apply hidden lg:flex w-max h-full items-center gap-6; 
 }
 .navElement{
