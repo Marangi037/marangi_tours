@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <section className='max-w-screen  h-screen flex flex-col bg-[url("/call_bg.jpg")] bg-center bg-no-repeat bg-cover justify-between items-center text-white bg-white' id='contact'>
+    <section className='max-w-screen  h-screen flex flex-col bg-[url("/call_bg.jpg")] bg-center bg-no-repeat bg-cover justify-between items-center text-white bg-white py-[2rem] lg:py-0' id='contact'>
         <div className='w-full h-full backdrop-blur-[5px] gap-[3rem] flex flex-col'>
             <h1 className='w-full text-center text-2xl lg:text-5xl text-black lg:text-white'>Contact us</h1>
             <div className='h-[90%] flex flex-col lg:flex-row w-[70%] justify-center items-center lg:w-full'>
